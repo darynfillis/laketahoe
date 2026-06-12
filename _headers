@@ -1,0 +1,11 @@
+/assets/images/meta/OGv2.jpg
+  Content-Type: image/jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/meta/OGv2.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff

@@ -78,3 +78,20 @@ The 34 favicon assets are included in `/assets/favicons/` and all static page he
 
 ## OG Image Update
 The Open Graph image is the selected retro FOR SALE poster at assets/images/meta/og-image.jpg, exported at 1200 x 630 for social previews.
+
+
+## OGv2 / iMessage social preview
+
+The primary social preview image is:
+
+`/assets/images/meta/OGv2.jpg?v=2`
+
+The site uses absolute Open Graph image URLs for better compatibility with iMessage, Facebook, LinkedIn, Slack, and other preview scrapers.
+
+After deploying, test directly:
+
+`https://laketahoecondo.netlify.app/assets/images/meta/OGv2.jpg?v=2`
+
+Then paste the homepage URL into a new iMessage thread. If an older image appears, send the URL with a cache-busting query once:
+
+`https://laketahoecondo.netlify.app/?v=2`
