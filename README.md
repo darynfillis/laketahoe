@@ -69,3 +69,8 @@ After redeploying, open Netlify Dashboard > Forms and make sure form detection i
 - Audience-toggle inactive copy marked `aria-hidden`.
 - Toggle/filter buttons use `aria-pressed`.
 - Netlify honeypot field is hidden and removed from tab order.
+
+
+## Favicon package
+
+The 34 favicon assets are included in `/assets/favicons/` and all static page heads have been patched to reference them.
