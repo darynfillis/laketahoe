@@ -74,3 +74,12 @@ After redeploying, open Netlify Dashboard > Forms and make sure form detection i
 ## Favicon package
 
 The 34 favicon assets are included in `/assets/favicons/` and all static page heads have been patched to reference them.
+
+
+## Open Graph image
+
+The active social share image is:
+
+`assets/images/meta/og-image.jpg`
+
+It is based on the custom For Sale poster artwork and is sized for social previews at 1200x630. The same artwork is also shown on the property page in the poster/share-card section.
