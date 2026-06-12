@@ -95,3 +95,77 @@ After deploying, test directly:
 Then paste the homepage URL into a new iMessage thread. If an older image appears, send the URL with a cache-busting query once:
 
 `https://laketahoecondo.netlify.app/?v=2`
+
+
+## OGv3 iMessage fix
+
+Primary OG image is now a root-level image for maximum iMessage compatibility:
+
+`https://laketahoecondo.netlify.app/OGv3.jpg?v=3`
+
+The site now has one OG/Twitter image block per HTML page and no alternate OG image file references.
+
+After deploy:
+1. Open `https://laketahoecondo.netlify.app/OGv3.jpg?v=3` directly.
+2. Open `https://laketahoecondo.netlify.app/?v=3` in Safari.
+3. Paste `https://laketahoecondo.netlify.app/?v=3` into a new iMessage thread.
+
+If iMessage still shows the old card, delete the thread and try again because Apple caches previews aggressively.
+
+
+## OGv4 iMessage no-crop fix
+
+The previous OG image was cropped to fit 1200x630, which trimmed the top and bottom of the poster. OGv4 preserves the full poster inside a 1200x630 canvas with safe padding.
+
+Primary image:
+
+`https://laketahoecondo.netlify.app/OGv4.jpg?v=4`
+
+Test after deployment:
+1. Open `https://laketahoecondo.netlify.app/OGv4.jpg?v=4` directly.
+2. Paste `https://laketahoecondo.netlify.app/?v=4` into a brand-new iMessage thread.
+3. If iMessage still shows the old card, delete the thread and test again. Apple caches link previews aggressively.
+
+
+## OGv5 iMessage edge-fill version
+
+OGv5 removes the beige padding. It preserves the full poster without cropping by using a blurred full-bleed version of the artwork behind the fitted poster.
+
+Primary image:
+
+`https://laketahoecondo.netlify.app/OGv5.jpg?v=5`
+
+Test:
+`https://laketahoecondo.netlify.app/?v=5`
+
+
+## OGv6 correct-size poster
+
+OGv6 uses the correctly-wide poster artwork and resizes it directly to 1200x630.
+No crop. No beige padding. No blurred background.
+
+Primary image:
+
+`https://laketahoecondo.netlify.app/OGv6.jpg`
+
+Test after deploy:
+
+`https://laketahoecondo.netlify.app/OGv6.jpg`
+
+Then paste this into a brand-new iMessage thread:
+
+`https://laketahoecondo.netlify.app/?v=6`
+
+
+## Matching 34 favicon
+
+The favicon now uses the same circular 34 badge from the OG poster artwork.
+
+Primary favicon paths:
+
+`/favicon.ico`
+`/favicon-32x32.png`
+`/apple-touch-icon.png`
+`/site.webmanifest`
+
+If the old favicon still appears after deploying, hard refresh or open a private window. Browsers cache favicons aggressively.
