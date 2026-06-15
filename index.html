@@ -14,11 +14,11 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1C5E60">
 <title>7600 N Lake Blvd #34 · Tahoe Vista, CA · Lakefront Condo</title>
-<meta content="3 bed, 3 bath lakefront-living condo in Tahoe Vista — minutes to Northstar, steps to the North Shore. For the buyer who wants more than an address. Private showings now." name="description"/>
+<meta content="3 bed, 3-1/2 bathrooms lakefront-living condo in Tahoe Vista — minutes to Northstar, steps to the North Shore. For the buyer who wants more than an address. Private showings now." name="description"/>
 
 <!-- Primary social sharing image. Keep this as the only OG/Twitter image block. -->
 <meta property="og:title" content="7600 N Lake Blvd, Unit 34 · Tahoe Vista, CA">
-<meta property="og:description" content="Lakefront condo in Tahoe Vista with private beach, pier access, and year-round adventure.">
+<meta property="og:description" content="Offered at $1,750,000, this Tahoe Vista lakefront condo features private beach, pier access, and year-round adventure.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://laketahoecondo.netlify.app/">
 <meta property="og:site_name" content="7600 N Lake Blvd, Unit 34">
@@ -31,7 +31,7 @@
 <meta property="og:image:alt" content="For sale poster for 7600 N Lake Blvd, Unit 34, Tahoe Vista, CA lakefront condo">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="7600 N Lake Blvd, Unit 34 · Tahoe Vista, CA">
-<meta name="twitter:description" content="Lakefront condo in Tahoe Vista with private beach, pier access, and year-round adventure.">
+<meta name="twitter:description" content="Offered at $1,750,000, this Tahoe Vista lakefront condo features private beach, pier access, and year-round adventure.">
 <meta name="twitter:image" content="https://laketahoecondo.netlify.app/OGv6.jpg">
 <meta name="twitter:image:alt" content="For sale poster for 7600 N Lake Blvd, Unit 34, Tahoe Vista, CA lakefront condo">
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -501,6 +501,25 @@ a.loc-card:focus-visible,a.hood-card:focus-visible,a.intel-card:focus-visible,.a
   .lb-cap{font-size:.82rem;padding:0 16px;bottom:16px}
 }
 
+
+/* ===== MATTERPORT / 3D TOUR ===== */
+#matterport{background:var(--cream)}
+.matterport-frame{
+  position:relative;
+  aspect-ratio:16/9;
+  border-radius:6px;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--water) 0%,var(--pine-deep) 100%);
+  box-shadow:0 20px 50px var(--shadow);
+  border:1px solid rgba(35,48,47,.12);
+}
+.matterport-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
 </style>
 </head>
 <body>
@@ -509,6 +528,7 @@ a.loc-card:focus-visible,a.hood-card:focus-visible,a.intel-card:focus-visible,.a
 <div class="brand">TAHOE<span>·</span>LAKEFRONT</div>
 <div class="links">
 <a href="#gallery">Photos</a>
+    <a href="#matterport">3D Tour</a>
 <a href="#location">Location</a>
 <a href="#neighborhood">Neighborhood</a>
 <a href="#life">Plan Your Life</a>
@@ -603,9 +623,9 @@ a.loc-card:focus-visible,a.hood-card:focus-visible,a.intel-card:focus-visible,.a
 <div class="wrap" style="padding:0">
 <div class="grid">
 <div class="stat"><div class="num">3</div><div class="lbl">Bedrooms</div></div>
-<div class="stat"><div class="num">3</div><div class="lbl">Bathrooms</div></div>
+<div class="stat"><div class="num">3-1/2</div><div class="lbl">Bathrooms</div></div>
 <div class="stat"><div class="num">1,632</div><div class="lbl">Square feet</div></div>
-<div class="stat"><div class="num">$2.175M</div><div class="lbl">Offered at</div></div>
+<div class="stat"><div class="num">$1,750,000</div><div class="lbl">Offered at</div></div>
 </div>
 </div>
 </section>
@@ -643,11 +663,33 @@ a.loc-card:focus-visible,a.hood-card:focus-visible,a.intel-card:focus-visible,.a
 <div class="gtile m13"><img alt="Full bath with granite vanity and walk-in shower" data-full="assets/images/gallery/13-full-bath-granite-shower.webp" decoding="async" height="667" loading="lazy" src="assets/images/gallery/thumbs/13-full-bath-granite-shower.webp" width="1000"/></div>
 <div class="gtile m14"><img alt="Guest bathroom with gold-framed shower and marble vanity" data-full="assets/images/gallery/14-guest-bath-gold-shower.webp" decoding="async" height="667" loading="lazy" src="assets/images/gallery/thumbs/14-guest-bath-gold-shower.webp" width="1000"/></div>
 <div class="gtile m15"><img alt="Powder room with framed vintage Lake Tahoe prints" data-full="assets/images/gallery/15-powder-room-tahoe-prints.webp" decoding="async" height="667" loading="lazy" src="assets/images/gallery/thumbs/15-powder-room-tahoe-prints.webp" width="1000"/></div>
-<div class="gtile m16"><span class="tag">3 Bed · 3 Bath</span><img alt="Dining area open to kitchen and tiled entry foyer" data-full="assets/images/gallery/16-dining-kitchen-tiled-entry.webp" decoding="async" height="667" loading="lazy" src="assets/images/gallery/thumbs/16-dining-kitchen-tiled-entry.webp" width="1000"/></div>
+<div class="gtile m16"><span class="tag">3 bed · 3-1/2 bathrooms</span><img alt="Dining area open to kitchen and tiled entry foyer" data-full="assets/images/gallery/16-dining-kitchen-tiled-entry.webp" decoding="async" height="667" loading="lazy" src="assets/images/gallery/thumbs/16-dining-kitchen-tiled-entry.webp" width="1000"/></div>
 </div>
 </div>
 </section>
 <!-- VIDEO SECTION: add back once the tour or hero video asset is ready. -->
+
+<!-- MATTERPORT / 3D TOUR -->
+<section id="matterport">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Walk the home</span>
+      <h2>Take the 3D tour before you arrive.</h2>
+      <p>Explore the layout, room flow, and lakefront lifestyle from wherever you are with the full Matterport 3D walkthrough.</p>
+    </div>
+    <div class="matterport-frame reveal" aria-label="Matterport 3D tour">
+      <iframe
+        src="https://my.matterport.com/show/?m=UcK6pKLyEj3"
+        title="Matterport 3D tour of 7600 N Lake Blvd, Unit 34"
+        allowfullscreen
+        allow="xr-spatial-tracking; fullscreen; autoplay; gyroscope; accelerometer"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
 <!-- FEATURES -->
 <section id="features">
 <div class="wrap">
@@ -1095,6 +1137,7 @@ a.loc-card:focus-visible,a.hood-card:focus-visible,a.intel-card:focus-visible,.a
 <div class="brand">TAHOE<span>·</span>LAKEFRONT</div>
 <div class="flinks">
 <a href="#gallery">Photos</a>
+    <a href="#matterport">3D Tour</a>
 <a href="#features">The Property</a>
 <a href="#financing">Financing</a>
 <a href="#contact">Showing</a>

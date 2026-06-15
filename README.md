@@ -169,3 +169,19 @@ Primary favicon paths:
 `/site.webmanifest`
 
 If the old favicon still appears after deploying, hard refresh or open a private window. Browsers cache favicons aggressively.
+
+
+
+
+## Bathroom count update
+
+Bathroom count has been updated to read `3-1/2 bathrooms`.
+
+
+## Matterport embedded
+
+The Matterport 3D tour is now embedded in the `#matterport` section.
+
+Matterport URL:
+
+`https://my.matterport.com/show/?m=UcK6pKLyEj3`
