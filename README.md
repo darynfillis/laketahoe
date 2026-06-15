@@ -90,25 +90,25 @@ The site uses absolute Open Graph image URLs for better compatibility with iMess
 
 After deploying, test directly:
 
-`https://laketahoecondo.netlify.app/assets/images/meta/OGv2.jpg?v=2`
+`https://lakefronttahoevista.com/assets/images/meta/OGv2.jpg?v=2`
 
 Then paste the homepage URL into a new iMessage thread. If an older image appears, send the URL with a cache-busting query once:
 
-`https://laketahoecondo.netlify.app/?v=2`
+`https://lakefronttahoevista.com/?v=2`
 
 
 ## OGv3 iMessage fix
 
 Primary OG image is now a root-level image for maximum iMessage compatibility:
 
-`https://laketahoecondo.netlify.app/OGv3.jpg?v=3`
+`https://lakefronttahoevista.com/OGv3.jpg?v=3`
 
 The site now has one OG/Twitter image block per HTML page and no alternate OG image file references.
 
 After deploy:
-1. Open `https://laketahoecondo.netlify.app/OGv3.jpg?v=3` directly.
-2. Open `https://laketahoecondo.netlify.app/?v=3` in Safari.
-3. Paste `https://laketahoecondo.netlify.app/?v=3` into a new iMessage thread.
+1. Open `https://lakefronttahoevista.com/OGv3.jpg?v=3` directly.
+2. Open `https://lakefronttahoevista.com/?v=3` in Safari.
+3. Paste `https://lakefronttahoevista.com/?v=3` into a new iMessage thread.
 
 If iMessage still shows the old card, delete the thread and try again because Apple caches previews aggressively.
 
@@ -119,11 +119,11 @@ The previous OG image was cropped to fit 1200x630, which trimmed the top and bot
 
 Primary image:
 
-`https://laketahoecondo.netlify.app/OGv4.jpg?v=4`
+`https://lakefronttahoevista.com/OGv4.jpg?v=4`
 
 Test after deployment:
-1. Open `https://laketahoecondo.netlify.app/OGv4.jpg?v=4` directly.
-2. Paste `https://laketahoecondo.netlify.app/?v=4` into a brand-new iMessage thread.
+1. Open `https://lakefronttahoevista.com/OGv4.jpg?v=4` directly.
+2. Paste `https://lakefronttahoevista.com/?v=4` into a brand-new iMessage thread.
 3. If iMessage still shows the old card, delete the thread and test again. Apple caches link previews aggressively.
 
 
@@ -133,10 +133,10 @@ OGv5 removes the beige padding. It preserves the full poster without cropping by
 
 Primary image:
 
-`https://laketahoecondo.netlify.app/OGv5.jpg?v=5`
+`https://lakefronttahoevista.com/OGv5.jpg?v=5`
 
 Test:
-`https://laketahoecondo.netlify.app/?v=5`
+`https://lakefronttahoevista.com/?v=5`
 
 
 ## OGv6 correct-size poster
@@ -146,15 +146,15 @@ No crop. No beige padding. No blurred background.
 
 Primary image:
 
-`https://laketahoecondo.netlify.app/OGv6.jpg`
+`https://lakefronttahoevista.com/OGv6.jpg`
 
 Test after deploy:
 
-`https://laketahoecondo.netlify.app/OGv6.jpg`
+`https://lakefronttahoevista.com/OGv6.jpg`
 
 Then paste this into a brand-new iMessage thread:
 
-`https://laketahoecondo.netlify.app/?v=6`
+`https://lakefronttahoevista.com/?v=6`
 
 
 ## Matching 34 favicon
@@ -185,3 +185,27 @@ The Matterport 3D tour is now embedded in the `#matterport` section.
 Matterport URL:
 
 `https://my.matterport.com/show/?m=UcK6pKLyEj3`
+
+
+## Final domain update
+
+The production domain is now:
+
+`https://lakefronttahoevista.com`
+
+All Open Graph, Twitter, canonical, robots, and sitemap references have been updated to this domain.
+
+Key test URLs after deploy:
+
+`https://lakefronttahoevista.com/`
+`https://lakefronttahoevista.com/OGv6.jpg`
+`https://lakefronttahoevista.com/favicon.ico`
+`https://lakefronttahoevista.com/success/`
+`https://lakefronttahoevista.com/accessibility/`
+`https://lakefronttahoevista.com/privacy/`
+`https://lakefronttahoevista.com/terms/`
+`https://lakefronttahoevista.com/sitemap.xml`
+
+For iMessage testing, paste this into a brand-new thread:
+
+`https://lakefronttahoevista.com/?v=7`
