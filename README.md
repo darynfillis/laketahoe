@@ -403,3 +403,15 @@ The mobile Story section now has the required CSS and safer JavaScript for the C
 ## Mobile hero CTA update
 
 The hero section's "Book a Private Showing" and "Explore the Property" CTA buttons are hidden on mobile only. Desktop is unchanged.
+
+## Life cards visibility and mobile hero nudge
+
+- Private Buoy and Toy Storage were inserted into the actual Life section card grid.
+- Added visibility guard CSS for the Life section cards.
+- On mobile only, the hero eyebrow and buyer selector are nudged upward slightly without moving the full hero block.
+
+## Owner amenities visible fix
+
+Private Buoy and Toy Storage are now added as a single visible Owner Amenities block inside the actual Life section, before the Airport block:
+- Private Buoy: 12 private buoys available for owners to rent
+- Toy Storage: Private kayak and paddle board storage
