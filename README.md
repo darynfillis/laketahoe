@@ -399,3 +399,7 @@ See `GALLERY_ORDER_BEST_ORIGINAL_PHOTOS.txt` for the exact order.
 ## Story continue-reading fix
 
 The mobile Story section now has the required CSS and safer JavaScript for the Continue Reading / Show Less behavior. Desktop remains fully expanded.
+
+## Mobile hero CTA update
+
+The hero section's "Book a Private Showing" and "Explore the Property" CTA buttons are hidden on mobile only. Desktop is unchanged.
