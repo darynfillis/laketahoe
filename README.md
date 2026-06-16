@@ -353,3 +353,11 @@ This version forces gallery images to render visibly on the page:
 - made first 12 gallery images eager/high priority
 - added final CSS override to force gallery images visible inside each tile
 - verified 50 gallery image paths and 50 lightbox image paths
+
+## Mobile hero / CTA contrast update
+
+- Mobile sticky "Book Showing" text on the yellow side now uses deep green for contrast.
+- Mobile hero content has been moved closer to the nav bar.
+- The map disclaimer line remains removed.
+- Added a Google Analytics placeholder comment in `index.html`.
+- Added `GOOGLE_ANALYTICS_INSTRUCTIONS.txt`.

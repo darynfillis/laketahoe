@@ -1,0 +1,23 @@
+How to add Google Analytics
+
+1. Go to analytics.google.com.
+2. Create or open the property for lakefronttahoevista.com.
+3. Go to Admin > Data streams > Web.
+4. Copy your Measurement ID. It starts with G-.
+5. In index.html, search for:
+
+GOOGLE ANALYTICS PLACEHOLDER
+
+6. Replace that whole comment block with the Google tag code from Analytics.
+
+It will look like this:
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+Replace G-XXXXXXXXXX with the actual Measurement ID.
