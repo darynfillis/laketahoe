@@ -321,3 +321,13 @@ Use a brand-new iMessage thread because Apple caches link previews aggressively.
 - Gallery thumbnail URLs include `?v=50` to avoid stale cached 404s.
 - Gallery thumbnails now fall back to the full image if the thumbnail fails.
 - `_headers` explicitly serves WebP gallery images as `image/webp`.
+
+## Thumbnail dependency removed
+
+The gallery no longer uses `/assets/images/gallery/thumbs/`.
+
+All gallery grid images now load directly from:
+
+`/assets/images/gallery/`
+
+This avoids broken thumbnails when GitHub or Netlify uploads miss the `thumbs` folder.

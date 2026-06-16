@@ -14,9 +14,6 @@
   Content-Type: image/webp
   Cache-Control: public, max-age=0, must-revalidate
 
-/assets/images/gallery/thumbs/*
-  Content-Type: image/webp
-  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/video/*
   Cache-Control: public, max-age=0, must-revalidate
