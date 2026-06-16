@@ -209,3 +209,105 @@ Key test URLs after deploy:
 For iMessage testing, paste this into a brand-new thread:
 
 `https://lakefronttahoevista.com/?v=7`
+
+## Postcard brand update
+
+The site has been updated to match the property postcard direction:
+
+- Font family changed to Poppins.
+- Hero headline now uses the postcard-style yellow fill and black outline.
+- Primary brand yellow: `#F1E12E`.
+- Outline / stroke color: `#000000`.
+- Supporting palette pulled from the postcard art: forest green, deep teal, warm sky, wood/stone tones.
+
+
+## Final magazine/video update
+
+Updates included:
+- Hero now uses `assets/video/tahoe-long-shot.mp4`.
+- Hero video is set to `autoplay muted loop playsinline`.
+- Body copy uses Montserrat and displays in all caps.
+- Display/hero text keeps the bold postcard-inspired Poppins treatment.
+- Site palette updated from the magazine/postcard direction.
+- Black background treatments have been replaced with deep Tahoe teal/forest tones.
+- A new `#story` section uses the supplied Chateau Chamonix listing narrative.
+
+Hero video compressed: `True`.
+
+## No-magazine / audience toggle update
+
+The visible Property Magazine section has been removed from the site.
+
+The hero buyer-profile toggle has been restored with three choices:
+- Owner
+- Second Home
+- Investor
+
+The site still keeps the hero video, Matterport embed, Montserrat body copy, final domain, OG image, price, bathroom count, and 34 favicon.
+
+## Eyebrow contrast update
+
+Eyebrow labels now use a high-contrast yellow pill treatment:
+- Fill: `#F1E12E`
+- Text and border: `#000000`
+- Removed the low-contrast decorative line before the eyebrow text.
+
+## Financing role and hero eyebrow spacing update
+
+- Moved the hero address/price eyebrow down slightly.
+- Changed the lender-card role text, including "Your financing guide," to deep Tahoe teal for better contrast on the light card background.
+
+## Hero address / toggle / nav fix
+
+- Reduced and tightened the hero address/price pill.
+- Moved the hero address/price pill down from the nav.
+- Improved contrast for the "I'm looking as..." label.
+- Tightened desktop nav spacing so links do not clip on wide/tablet viewports.
+
+
+## Expanded gallery update
+
+Added 20 new optimized gallery images:
+- aerial shoreline and private beach views
+- pool and waterfront amenities
+- lower-level living, kitchenette, laundry and interior images
+
+Optimized full images are in:
+`assets/images/gallery/`
+
+Optimized thumbnails are in:
+`assets/images/gallery/thumbs/`
+
+The lightbox automatically includes the new images because it reads every image inside `.gallery-grid`.
+
+
+## Second expanded gallery update
+
+Added 14 more optimized gallery images:
+- dining and kitchen views
+- primary bedroom and bathrooms
+- front door, covered balcony and lake views
+- walkout patio, lawn, hammock, shoreline and kayak storage
+
+Gallery now includes 50 images total.
+
+
+## OGv7 full-site share image update
+
+The new share image is now the primary OG/Twitter image across every HTML page.
+
+Primary image:
+
+`https://lakefronttahoevista.com/OGv7.jpg`
+
+Also saved as:
+
+`/assets/images/meta/OGv7.jpg`
+`/assets/images/meta/og-image.jpg`
+
+After deployment, test:
+
+`https://lakefronttahoevista.com/OGv7.jpg`
+`https://lakefronttahoevista.com/?v=8`
+
+Use a brand-new iMessage thread because Apple caches link previews aggressively.
