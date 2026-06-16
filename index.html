@@ -1391,139 +1391,33 @@ nav .nav-cta{
 }
 
 
-/* ===== MOBILE HERO TIGHTER SPACING ===== */
+
+
+/* ===== MOBILE HERO SPACING CORRECTED ===== */
 @media(max-width:760px){
   .hero{
+    min-height:100svh !important;
     padding-top:0 !important;
-    margin-top:0 !important;
   }
   .hero .wrap{
-    padding-top:0 !important;
-  }
-  .hero .eyebrow{
-    margin-top:-24px !important;
-  }
-  .toggle-wrap{
-    margin-top:-10px !important;
-  }
-}
-
-
-/* ===== MOBILE STORY CONTINUE READING ===== */
-@media(max-width:760px){
-  #story .story-copy,
-  #story .copy,
-  #story .story-text,
-  #story article{
-    position:relative;
-  }
-  #story .mobile-story-collapsible{
-    position:relative;
-    max-height:360px;
-    overflow:hidden;
-    transition:max-height .45s ease;
-  }
-  #story .mobile-story-collapsible::after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:96px;
-    pointer-events:none;
-    background:linear-gradient(to bottom, rgba(247,247,243,0), var(--cream, #F7F7F3) 82%);
-    opacity:1;
-    transition:opacity .25s ease;
-  }
-  #story .mobile-story-collapsible.expanded{
-    max-height:4000px;
-  }
-  #story .mobile-story-collapsible.expanded::after{
-    opacity:0;
-  }
-  #story .mobile-story-toggle{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    margin-top:18px;
-    min-height:48px;
-    padding:14px 20px;
-    width:100%;
-    border:2px solid #000000;
-    background:#F1E12E;
-    color:#0B4A43;
-    font-family:var(--body-font, 'Montserrat', Arial, sans-serif);
-    font-weight:900;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    cursor:pointer;
-    box-shadow:4px 4px 0 rgba(0,0,0,.65);
-  }
-}
-@media(min-width:761px){
-  #story .mobile-story-toggle{
-    display:none !important;
-  }
-  #story .mobile-story-collapsible{
-    max-height:none !important;
-    overflow:visible !important;
-  }
-}
-
-
-/* ===== MOBILE HERO EXTRA TIGHT SPACING ===== */
-@media(max-width:760px){
-  .hero{
-    padding-top:0 !important;
-    margin-top:0 !important;
-    min-height:auto !important;
-  }
-  .hero .wrap{
-    padding-top:0 !important;
-    transform:translateY(-74px) !important;
+    padding-top:42px !important;
+    transform:none !important;
   }
   .hero .eyebrow{
     margin-top:0 !important;
+    margin-bottom:18px !important;
   }
   .toggle-wrap{
-    margin-top:-8px !important;
-    margin-bottom:12px !important;
+    margin-top:0 !important;
+    margin-bottom:16px !important;
   }
   .hero h1{
-    margin-top:-4px !important;
-  }
-}
-
-
-/* ===== MOBILE HERO ULTRA TIGHT SPACING ===== */
-@media(max-width:760px){
-  .hero{
-    padding-top:0 !important;
-    margin-top:0 !important;
-    min-height:auto !important;
-  }
-  .hero .wrap{
-    padding-top:0 !important;
-    transform:translateY(-112px) !important;
-  }
-  .hero .eyebrow{
     margin-top:0 !important;
   }
-  .toggle-wrap{
-    margin-top:-10px !important;
-    margin-bottom:10px !important;
-  }
-  .hero h1{
-    margin-top:-6px !important;
+  .hero .hero-actions{
+    margin-top:22px !important;
   }
 }
-
-
-.faq-section{padding:80px 0;background:var(--cream)}
-.faq-list{max-width:900px;margin:0 auto}
-.faq-list details{border:2px solid #0B4A43;border-radius:12px;margin-bottom:16px;background:#fff;overflow:hidden}
-.faq-list summary{cursor:pointer;padding:20px;font-weight:700;font-family:'Poppins',sans-serif}
-.faq-list p{padding:0 20px 20px;font-family:'Montserrat',sans-serif;text-transform:uppercase;line-height:1.8}
 
 </style>
 
@@ -1662,32 +1556,32 @@ nav .nav-cta{
 </div>
 <div class="gallery-grid reveal">
 <!-- 50 optimized listing photos -->
-<div class="gtile m1"><img loading="eager" fetchpriority="high" alt="Guest bedroom with queen bed, mounted TV and forest artwork" data-full="/assets/images/gallery/10-guest-bedroom-queen.webp" decoding="async" height="667" src="/assets/images/gallery/10-guest-bedroom-queen.webp" width="1000"></div>
-<div class="gtile m2"><img alt="Primary bathroom with granite vanity, shower, framed art and fresh towels" data-full="/assets/images/gallery/43-primary-bath-granite-vanity.webp" decoding="async" height="666" src="/assets/images/gallery/43-primary-bath-granite-vanity.webp" width="1000"></div>
-<div class="gtile m3"><img alt="In-unit laundry room with washer and dryer" data-full="/assets/images/gallery/34-in-unit-laundry-room.webp" decoding="async" height="666" src="/assets/images/gallery/34-in-unit-laundry-room.webp" width="1000"></div>
-<div class="gtile m4"><img alt="Top-down aerial view of the Chateau Chamonix community pool and lounge area" data-full="/assets/images/gallery/28-top-down-community-pool.webp" decoding="async" height="666" src="/assets/images/gallery/28-top-down-community-pool.webp" width="1000"></div>
-<div class="gtile m5"><img alt="Guest bedroom staged with neutral bedding, wall-mounted television and forest-inspired artwork" data-full="/assets/images/gallery/44-guest-bedroom-staged.webp" decoding="async" height="666" src="/assets/images/gallery/44-guest-bedroom-staged.webp" width="1000"></div>
-<div class="gtile m6"><img alt="Guest bathroom with gold-framed shower and marble vanity" data-full="/assets/images/gallery/14-guest-bath-gold-shower.webp" decoding="async" height="667" src="/assets/images/gallery/14-guest-bath-gold-shower.webp" width="1000"></div>
-<div class="gtile m7"><img alt="Lower-level kitchenette with cooktop, sink, storage and under-counter refrigerator" data-full="/assets/images/gallery/33-lower-level-kitchenette.webp" decoding="async" height="666" src="/assets/images/gallery/33-lower-level-kitchenette.webp" width="1000"></div>
-<div class="gtile m8"><img alt="Top-down aerial view of private sandy beach, shoreline rocks, building and parking" data-full="/assets/images/gallery/27-top-down-private-beach-and-building.webp" decoding="async" height="666" src="/assets/images/gallery/27-top-down-private-beach-and-building.webp" width="1000"></div>
-<div class="gtile m9"><img alt="Lake Tahoe view from the shoreline with pier, boats, shrubs and blue sky" data-full="/assets/images/gallery/49-lake-view-from-shoreline.webp" decoding="async" height="666" src="/assets/images/gallery/49-lake-view-from-shoreline.webp" width="1000"></div>
-<div class="gtile m10"><img alt="Bedroom view looking toward the living area and Lake Tahoe through sliding doors" data-full="/assets/images/gallery/30-bedroom-open-to-lake-view-living.webp" decoding="async" height="666" src="/assets/images/gallery/30-bedroom-open-to-lake-view-living.webp" width="1000"></div>
-<div class="gtile m11"><img alt="Guest bathroom with gold-framed shower and marble vanity" data-full="/assets/images/gallery/32-guest-bath-gold-shower.webp" decoding="async" height="666" src="/assets/images/gallery/32-guest-bath-gold-shower.webp" width="1000"></div>
-<div class="gtile m12"><img alt="Kitchen entry with wood cabinetry, tile floor, granite counters and glass-paneled door" data-full="/assets/images/gallery/38-kitchen-entry-and-cabinetry.webp" decoding="async" height="666" src="/assets/images/gallery/38-kitchen-entry-and-cabinetry.webp" width="1000"></div>
-<div class="gtile m13"><img alt="Powder room with vintage wallpaper, mirror, pedestal sink and Lake Tahoe artwork" data-full="/assets/images/gallery/40-powder-room-vintage-wallpaper.webp" decoding="async" height="666" src="/assets/images/gallery/40-powder-room-vintage-wallpaper.webp" width="1000"></div>
-<div class="gtile m14"><span class="tag">Private shoreline</span><img alt="Close aerial view of the lakefront condo building, shoreline lawn and colorful kayak storage" data-full="/assets/images/gallery/23-close-aerial-condo-lawn-and-kayaks.webp" decoding="async" height="666" src="/assets/images/gallery/23-close-aerial-condo-lawn-and-kayaks.webp" width="1000"></div>
-<div class="gtile m15"><img alt="Lakefront lawn with hammock between trees, pier, boats and Lake Tahoe views" data-full="/assets/images/gallery/47-lawn-hammock-and-lake.webp" decoding="async" height="666" src="/assets/images/gallery/47-lawn-hammock-and-lake.webp" width="1000"></div>
-<div class="gtile m16"><img loading="eager" fetchpriority="high" alt="Lake view framed by sliding glass doors from the second living area" data-full="/assets/images/gallery/06-second-living-lake-view.webp" decoding="async" height="667" src="/assets/images/gallery/06-second-living-lake-view.webp" width="1000"></div>
-<div class="gtile m17"><img alt="Main living and dining area with fireplace, wood paneling and Lake Tahoe view" data-full="/assets/images/gallery/35-living-dining-fireplace-lake-view.webp" decoding="async" height="666" src="/assets/images/gallery/35-living-dining-fireplace-lake-view.webp" width="1000"></div>
-<div class="gtile m18"><img alt="Living room with brick fireplace, open dining area and kitchen beyond" data-full="/assets/images/gallery/36-living-room-fireplace-open-kitchen.webp" decoding="async" height="666" src="/assets/images/gallery/36-living-room-fireplace-open-kitchen.webp" width="1000"></div>
-<div class="gtile m19"><img alt="Kitchen with wood cabinetry, granite counters, double oven, microwave and refrigerator" data-full="/assets/images/gallery/39-kitchen-cabinetry-and-double-oven.webp" decoding="async" height="666" src="/assets/images/gallery/39-kitchen-cabinetry-and-double-oven.webp" width="1000"></div>
-<div class="gtile m20"><span class="tag">More interiors</span><img alt="Dining area with wood-paneled wall, lake-inspired artwork and open kitchen beyond" data-full="/assets/images/gallery/37-dining-room-open-kitchen.webp" decoding="async" height="666" src="/assets/images/gallery/37-dining-room-open-kitchen.webp" width="1000"></div>
-<div class="gtile m21"><img loading="eager" fetchpriority="high" alt="Primary suite with pine four-poster bed and ensuite bath" data-full="/assets/images/gallery/09-primary-suite-pine-bed.webp" decoding="async" height="667" src="/assets/images/gallery/09-primary-suite-pine-bed.webp" width="1000"></div>
-<div class="gtile m22"><span class="tag">Lake views</span><img alt="Covered balcony seating area with panoramic Lake Tahoe view" data-full="/assets/images/gallery/46-covered-balcony-lake-view.webp" decoding="async" height="664" src="/assets/images/gallery/46-covered-balcony-lake-view.webp" width="1000"></div>
-<div class="gtile m23"><img alt="Walkout lower-level patio with lounge seating, lawn access and lake views" data-full="/assets/images/gallery/48-walkout-patio-and-lawn.webp" decoding="async" height="667" src="/assets/images/gallery/48-walkout-patio-and-lawn.webp" width="1000"></div>
-<div class="gtile m24"><img loading="eager" fetchpriority="high" alt="Open-concept living and dining area with fireplace and lake-view kitchen" data-full="/assets/images/gallery/04-open-living-dining-kitchen.webp" decoding="async" height="667" src="/assets/images/gallery/04-open-living-dining-kitchen.webp" width="1000"></div>
-<div class="gtile m25"><img alt="Close aerial view of private beach, clear water, shoreline lawn and kayak storage" data-full="/assets/images/gallery/24-close-aerial-beach-kayaks-and-lawn.webp" decoding="async" height="666" src="/assets/images/gallery/24-close-aerial-beach-kayaks-and-lawn.webp" width="1000"></div>
-<div class="gtile m26"><img alt="Boat on turquoise Lake Tahoe water with the lakefront community in the background" data-full="/assets/images/gallery/26-lake-tahoe-boat-and-waterfront.webp" decoding="async" height="666" src="/assets/images/gallery/26-lake-tahoe-boat-and-waterfront.webp" width="1000"></div>
+<div class="gtile m1"><span class="tag">Private shoreline</span><img alt="Close aerial view of the lakefront condo building, shoreline lawn and colorful kayak storage" data-full="/assets/images/gallery/23-close-aerial-condo-lawn-and-kayaks.webp" decoding="async" height="666" src="/assets/images/gallery/23-close-aerial-condo-lawn-and-kayaks.webp" width="1000"></div>
+<div class="gtile m2"><img alt="Close aerial view of private beach, clear water, shoreline lawn and kayak storage" data-full="/assets/images/gallery/24-close-aerial-beach-kayaks-and-lawn.webp" decoding="async" height="666" src="/assets/images/gallery/24-close-aerial-beach-kayaks-and-lawn.webp" width="1000"></div>
+<div class="gtile m3"><img alt="Boat on turquoise Lake Tahoe water with the lakefront community in the background" data-full="/assets/images/gallery/26-lake-tahoe-boat-and-waterfront.webp" decoding="async" height="666" src="/assets/images/gallery/26-lake-tahoe-boat-and-waterfront.webp" width="1000"></div>
+<div class="gtile m4"><img alt="Top-down aerial view of private sandy beach, shoreline rocks, building and parking" data-full="/assets/images/gallery/27-top-down-private-beach-and-building.webp" decoding="async" height="666" src="/assets/images/gallery/27-top-down-private-beach-and-building.webp" width="1000"></div>
+<div class="gtile m5"><img alt="Lakefront lawn with hammock between trees, pier, boats and Lake Tahoe views" data-full="/assets/images/gallery/47-lawn-hammock-and-lake.webp" decoding="async" height="666" src="/assets/images/gallery/47-lawn-hammock-and-lake.webp" width="1000"></div>
+<div class="gtile m6"><img alt="Lake Tahoe view from the shoreline with pier, boats, shrubs and blue sky" data-full="/assets/images/gallery/49-lake-view-from-shoreline.webp" decoding="async" height="666" src="/assets/images/gallery/49-lake-view-from-shoreline.webp" width="1000"></div>
+<div class="gtile m7"><img alt="Walkout lower-level patio with lounge seating, lawn access and lake views" data-full="/assets/images/gallery/48-walkout-patio-and-lawn.webp" decoding="async" height="667" src="/assets/images/gallery/48-walkout-patio-and-lawn.webp" width="1000"></div>
+<div class="gtile m8"><span class="tag">Lake views</span><img alt="Covered balcony seating area with panoramic Lake Tahoe view" data-full="/assets/images/gallery/46-covered-balcony-lake-view.webp" decoding="async" height="664" src="/assets/images/gallery/46-covered-balcony-lake-view.webp" width="1000"></div>
+<div class="gtile m9"><img loading="eager" fetchpriority="high" alt="Lake view framed by sliding glass doors from the second living area" data-full="/assets/images/gallery/06-second-living-lake-view.webp" decoding="async" height="667" src="/assets/images/gallery/06-second-living-lake-view.webp" width="1000"></div>
+<div class="gtile m10"><img loading="eager" fetchpriority="high" alt="Open-concept living and dining area with fireplace and lake-view kitchen" data-full="/assets/images/gallery/04-open-living-dining-kitchen.webp" decoding="async" height="667" src="/assets/images/gallery/04-open-living-dining-kitchen.webp" width="1000"></div>
+<div class="gtile m11"><img alt="Main living and dining area with fireplace, wood paneling and Lake Tahoe view" data-full="/assets/images/gallery/35-living-dining-fireplace-lake-view.webp" decoding="async" height="666" src="/assets/images/gallery/35-living-dining-fireplace-lake-view.webp" width="1000"></div>
+<div class="gtile m12"><img alt="Living room with brick fireplace, open dining area and kitchen beyond" data-full="/assets/images/gallery/36-living-room-fireplace-open-kitchen.webp" decoding="async" height="666" src="/assets/images/gallery/36-living-room-fireplace-open-kitchen.webp" width="1000"></div>
+<div class="gtile m13"><span class="tag">More interiors</span><img alt="Dining area with wood-paneled wall, lake-inspired artwork and open kitchen beyond" data-full="/assets/images/gallery/37-dining-room-open-kitchen.webp" decoding="async" height="666" src="/assets/images/gallery/37-dining-room-open-kitchen.webp" width="1000"></div>
+<div class="gtile m14"><img alt="Kitchen entry with wood cabinetry, tile floor, granite counters and glass-paneled door" data-full="/assets/images/gallery/38-kitchen-entry-and-cabinetry.webp" decoding="async" height="666" src="/assets/images/gallery/38-kitchen-entry-and-cabinetry.webp" width="1000"></div>
+<div class="gtile m15"><img alt="Kitchen with wood cabinetry, granite counters, double oven, microwave and refrigerator" data-full="/assets/images/gallery/39-kitchen-cabinetry-and-double-oven.webp" decoding="async" height="666" src="/assets/images/gallery/39-kitchen-cabinetry-and-double-oven.webp" width="1000"></div>
+<div class="gtile m16"><img alt="Bedroom view looking toward the living area and Lake Tahoe through sliding doors" data-full="/assets/images/gallery/30-bedroom-open-to-lake-view-living.webp" decoding="async" height="666" src="/assets/images/gallery/30-bedroom-open-to-lake-view-living.webp" width="1000"></div>
+<div class="gtile m17"><img loading="eager" fetchpriority="high" alt="Primary suite with pine four-poster bed and ensuite bath" data-full="/assets/images/gallery/09-primary-suite-pine-bed.webp" decoding="async" height="667" src="/assets/images/gallery/09-primary-suite-pine-bed.webp" width="1000"></div>
+<div class="gtile m18"><img loading="eager" fetchpriority="high" alt="Guest bedroom with queen bed, mounted TV and forest artwork" data-full="/assets/images/gallery/10-guest-bedroom-queen.webp" decoding="async" height="667" src="/assets/images/gallery/10-guest-bedroom-queen.webp" width="1000"></div>
+<div class="gtile m19"><img alt="Guest bedroom staged with neutral bedding, wall-mounted television and forest-inspired artwork" data-full="/assets/images/gallery/44-guest-bedroom-staged.webp" decoding="async" height="666" src="/assets/images/gallery/44-guest-bedroom-staged.webp" width="1000"></div>
+<div class="gtile m20"><img alt="Primary bathroom with granite vanity, shower, framed art and fresh towels" data-full="/assets/images/gallery/43-primary-bath-granite-vanity.webp" decoding="async" height="666" src="/assets/images/gallery/43-primary-bath-granite-vanity.webp" width="1000"></div>
+<div class="gtile m21"><img alt="Guest bathroom with gold-framed shower and marble vanity" data-full="/assets/images/gallery/14-guest-bath-gold-shower.webp" decoding="async" height="667" src="/assets/images/gallery/14-guest-bath-gold-shower.webp" width="1000"></div>
+<div class="gtile m22"><img alt="Guest bathroom with gold-framed shower and marble vanity" data-full="/assets/images/gallery/32-guest-bath-gold-shower.webp" decoding="async" height="666" src="/assets/images/gallery/32-guest-bath-gold-shower.webp" width="1000"></div>
+<div class="gtile m23"><img alt="Powder room with vintage wallpaper, mirror, pedestal sink and Lake Tahoe artwork" data-full="/assets/images/gallery/40-powder-room-vintage-wallpaper.webp" decoding="async" height="666" src="/assets/images/gallery/40-powder-room-vintage-wallpaper.webp" width="1000"></div>
+<div class="gtile m24"><img alt="Lower-level kitchenette with cooktop, sink, storage and under-counter refrigerator" data-full="/assets/images/gallery/33-lower-level-kitchenette.webp" decoding="async" height="666" src="/assets/images/gallery/33-lower-level-kitchenette.webp" width="1000"></div>
+<div class="gtile m25"><img alt="In-unit laundry room with washer and dryer" data-full="/assets/images/gallery/34-in-unit-laundry-room.webp" decoding="async" height="666" src="/assets/images/gallery/34-in-unit-laundry-room.webp" width="1000"></div>
+<div class="gtile m26"><img alt="Top-down aerial view of the Chateau Chamonix community pool and lounge area" data-full="/assets/images/gallery/28-top-down-community-pool.webp" decoding="async" height="666" src="/assets/images/gallery/28-top-down-community-pool.webp" width="1000"></div>
 </div>
 </div>
 </section>

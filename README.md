@@ -384,3 +384,14 @@ On mobile only, the Story section now:
 - The gallery HTML and lightbox order now follow the curated first-to-last order.
 - Added `GALLERY_ORDER_26.txt`.
 - Mobile hero elements were moved further up again.
+
+## Mobile hero spacing corrected
+
+The overly aggressive mobile hero transform was removed. Mobile hero content now sits closer to the nav, but remains visible and unclipped.
+
+## Original photos restored and organized
+
+The gallery uses the original 26 site photos, organized as a listing story:
+waterfront/community context, lakefront lifestyle, patios/decks, living/kitchen, bedrooms/baths, lower-level flexibility, and pool.
+
+See `GALLERY_ORDER_BEST_ORIGINAL_PHOTOS.txt` for the exact order.
