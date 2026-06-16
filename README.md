@@ -344,3 +344,12 @@ Verified:
 - 50 gallery image `src` paths
 - 50 gallery `data-full` paths
 - 0 missing image files
+
+## Gallery visible fix
+
+This version forces gallery images to render visibly on the page:
+- removed gallery cache-busting query strings
+- removed lazy loading from gallery images
+- made first 12 gallery images eager/high priority
+- added final CSS override to force gallery images visible inside each tile
+- verified 50 gallery image paths and 50 lightbox image paths
