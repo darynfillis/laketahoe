@@ -395,3 +395,7 @@ The gallery uses the original 26 site photos, organized as a listing story:
 waterfront/community context, lakefront lifestyle, patios/decks, living/kitchen, bedrooms/baths, lower-level flexibility, and pool.
 
 See `GALLERY_ORDER_BEST_ORIGINAL_PHOTOS.txt` for the exact order.
+
+## Story continue-reading fix
+
+The mobile Story section now has the required CSS and safer JavaScript for the Continue Reading / Show Less behavior. Desktop remains fully expanded.
