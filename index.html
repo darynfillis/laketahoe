@@ -1477,6 +1477,72 @@ nav .nav-cta{
   }
 }
 
+
+/* ===== LIFE AMENITY CARDS FIX ===== */
+#life .life-block{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+#life .life-block h3{
+  color:inherit;
+}
+
+/* ===== MOBILE HERO EYEBROW SELECTOR NUDGE ===== */
+@media(max-width:760px){
+  .hero .eyebrow{
+    transform:translateY(-18px) !important;
+    margin-bottom:10px !important;
+  }
+  .hero .toggle-wrap{
+    transform:translateY(-18px) !important;
+    margin-bottom:8px !important;
+  }
+}
+
+
+/* ===== OWNER AMENITIES VISIBLE FIX ===== */
+#life .owner-amenities{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+#life .owner-amenities .facts-2{
+  display:grid;
+  gap:12px;
+}
+#life .owner-amenities .fact-row{
+  display:flex !important;
+  justify-content:space-between;
+  gap:18px;
+  align-items:flex-start;
+}
+@media(max-width:760px){
+  #life .owner-amenities .fact-row{
+    flex-direction:column;
+    gap:4px;
+  }
+}
+
+
+/* ===== FEATURE GRID UPDATE ===== */
+@media(min-width:761px){
+  #features .feat-grid{
+    grid-template-columns:repeat(4,1fr) !important;
+  }
+}
+
+/* ===== MOBILE HERO NUDGE SO CONTENT STAYS VISIBLE ===== */
+@media(max-width:760px){
+  .hero .eyebrow{
+    transform:translateY(-8px) !important;
+    margin-bottom:12px !important;
+  }
+  .hero .toggle-wrap{
+    transform:translateY(-8px) !important;
+    margin-bottom:10px !important;
+  }
+}
 </style>
 
 
@@ -1709,6 +1775,8 @@ nav .nav-cta{
 <div aria-hidden="true" class="feat aud-copy getaway"><div aria-hidden="true" class="ic">🧳</div><h3>Lock-and-leave</h3><p>Secure, low-upkeep ownership built for the come-and-go rhythm of a second home.</p></div>
 <div aria-hidden="true" class="feat aud-copy invest"><div aria-hidden="true" class="ic">📈</div><h3>Income-ready</h3><p>A lakefront address commands premium nightly rates and books through the seasons.</p></div>
 <div aria-hidden="false" class="feat aud-copy home active"><div aria-hidden="true" class="ic">🌲</div><h3>The setting</h3><p>Pines, quiet, and clean air — the reason people move here and never leave.</p></div>
+<div class="feat"><div aria-hidden="true" class="ic">⚓</div><h3>Private Buoy</h3><p>12 private buoys available for owners to rent.</p></div>
+<div class="feat"><div aria-hidden="true" class="ic">🛶</div><h3>Toy Storage</h3><p>Private kayak and paddle board storage.</p></div>
 <div aria-hidden="true" class="feat aud-copy getaway"><div aria-hidden="true" class="ic">⛷️</div><h3>Four seasons</h3><p>Summer on the water, winter on the slopes — a getaway that earns its keep year-round.</p></div>
 <div aria-hidden="true" class="feat aud-copy invest"><div aria-hidden="true" class="ic">🛡️</div><h3>Tangible &amp; scarce</h3><p>Limited lakefront supply gives this asset a floor most investments can't claim.</p></div>
 </div>
@@ -2018,6 +2086,19 @@ nav .nav-cta{
 </div>
 <p style="font-size:.82rem;opacity:.6;margin-top:14px">Chateau Chamonix includes a private sandy beach for owners. Public ramps require permits and inspection and have seasonal hours; verify current status before launching.</p>
 </div>
+
+<!-- OWNER AMENITIES -->
+<div class="life-block reveal owner-amenities">
+  <div class="lh">
+    <h3>Private Buoys & Toy Storage</h3>
+    <span class="lhsub">On-site amenities that make lake days easier</span>
+  </div>
+  <div class="facts-2">
+    <div class="fact-row"><span class="fk">Private Buoy</span><span class="fv">12 private buoys available for owners to rent</span></div>
+    <div class="fact-row"><span class="fk">Toy Storage</span><span class="fv">Private kayak and paddle board storage</span></div>
+  </div>
+</div>
+
 <!-- AIRPORT -->
 <div class="life-block reveal">
 <div class="lh"><h3>Stay Connected</h3><span class="lhsub">A major airport within an hour — easy for guests, owners, and renters alike</span></div>
@@ -2044,21 +2125,6 @@ nav .nav-cta{
 <p style="font-size:.82rem;opacity:.6;margin-top:14px">Tahoe-Truckee Unified is open-enrollment, so families can apply to schools beyond their home boundary. Kings Beach Elementary is the neighborhood school; high schoolers attend North Tahoe High in Tahoe City. Verify boundaries and current programs with the district.</p>
 </div>
 </div>
-
-<div class="life-block">
-  <div class="lh">
-    <h3>Private Buoy</h3>
-  </div>
-  <p>12 private buoys available for owners to rent.</p>
-</div>
-
-<div class="life-block">
-  <div class="lh">
-    <h3>Toy Storage</h3>
-  </div>
-  <p>Private kayak and paddle board storage.</p>
-</div>
-
 </section>
 <!-- FINANCING / THE GUIDE -->
 <section class="has-scenery" id="financing">
