@@ -1390,6 +1390,86 @@ nav .nav-cta{
   .feature-video{padding:3rem 0;}
 }
 
+
+/* ===== MOBILE HERO TIGHTER SPACING ===== */
+@media(max-width:760px){
+  .hero{
+    padding-top:0 !important;
+    margin-top:0 !important;
+  }
+  .hero .wrap{
+    padding-top:0 !important;
+  }
+  .hero .eyebrow{
+    margin-top:-24px !important;
+  }
+  .toggle-wrap{
+    margin-top:-10px !important;
+  }
+}
+
+
+/* ===== MOBILE STORY CONTINUE READING ===== */
+@media(max-width:760px){
+  #story .story-copy,
+  #story .copy,
+  #story .story-text,
+  #story article{
+    position:relative;
+  }
+  #story .mobile-story-collapsible{
+    position:relative;
+    max-height:360px;
+    overflow:hidden;
+    transition:max-height .45s ease;
+  }
+  #story .mobile-story-collapsible::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:96px;
+    pointer-events:none;
+    background:linear-gradient(to bottom, rgba(247,247,243,0), var(--cream, #F7F7F3) 82%);
+    opacity:1;
+    transition:opacity .25s ease;
+  }
+  #story .mobile-story-collapsible.expanded{
+    max-height:4000px;
+  }
+  #story .mobile-story-collapsible.expanded::after{
+    opacity:0;
+  }
+  #story .mobile-story-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:18px;
+    min-height:48px;
+    padding:14px 20px;
+    width:100%;
+    border:2px solid #000000;
+    background:#F1E12E;
+    color:#0B4A43;
+    font-family:var(--body-font, 'Montserrat', Arial, sans-serif);
+    font-weight:900;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    cursor:pointer;
+    box-shadow:4px 4px 0 rgba(0,0,0,.65);
+  }
+}
+@media(min-width:761px){
+  #story .mobile-story-toggle{
+    display:none !important;
+  }
+  #story .mobile-story-collapsible{
+    max-height:none !important;
+    overflow:visible !important;
+  }
+}
+
 </style>
 
 
@@ -1464,14 +1544,14 @@ nav .nav-cta{
         <h2>A true lakefront retreat inside Chateau Chamonix.</h2>
         <p class="story-lead">Set within Chateau Chamonix, a coveted waterfront community in Tahoe Vista, this rare three-level residence offers panoramic lake views, multiple covered outdoor living spaces, and direct access to a private sandy beach.</p>
       </div>
-      <div class="story-copy reveal">
+      <div class="story-copy reveal"><div class="mobile-story-collapsible" id="storyReadMoreContent">
         <p>From morning coffee overlooking the water to afternoons spent kayaking, paddleboarding, or relaxing on the shoreline, this is the kind of property people imagine when they dream about owning a home on Lake Tahoe.</p>
         <p>The main living level was designed to capture the lake at every opportunity. Expansive windows frame the water, while a large deck extends the living space outdoors and provides the perfect setting for dining, entertaining, or simply enjoying views across the lake.</p>
         <p>Upstairs, the primary suite enjoys its own private balcony overlooking Lake Tahoe, creating a peaceful retreat where the water is often the first thing you see each morning and the last thing you see each evening. The guestroom enjoys an en suite bathroom while the main level features a powder room so guests never have to go up or downstairs.</p>
         <p>Unlike many lakefront condominiums within Chateau Chamonix, this residence features a walkout lower level with direct access to the shoreline-side lawn and beach. Complete with its own kitchenette, bathroom, and private entrance, the space offers exceptional flexibility for guests, extended family, or potential rental income.</p>
         <p>Owners enjoy access to Chateau Chamonix’s private sandy beach, buoys, pool, kayak and paddleboard storage, and on-site resident manager. Located in Placer County, the property is eligible for short-term rental permitting, offering an opportunity to enjoy the home personally while generating income when not in use.</p>
         <p>Ideally situated just minutes from Kings Beach, Brockway Golf Course, Northstar Resort, Diamond Peak, Mt. Rose, hiking trails, dining, and year-round recreation, this is a rare opportunity to own a true lakefront retreat in one of North Lake Tahoe’s most sought-after waterfront communities.</p>
-      </div>
+      </div><button class="mobile-story-toggle" type="button" aria-expanded="false" aria-controls="storyReadMoreContent">Continue Reading</button></div>
     </div>
   </div>
 </section>
@@ -2206,5 +2286,19 @@ window.addEventListener('scroll',function(){
   });
 })();
 </script>
+
+<script>
+(function(){
+  var btn = document.querySelector('#story .mobile-story-toggle');
+  var content = document.getElementById('storyReadMoreContent');
+  if(!btn || !content) return;
+  btn.addEventListener('click', function(){
+    var expanded = content.classList.toggle('expanded');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    btn.textContent = expanded ? 'Show Less' : 'Continue Reading';
+  });
+})();
+</script>
+
 </body>
 </html>

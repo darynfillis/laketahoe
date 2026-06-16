@@ -361,3 +361,12 @@ This version forces gallery images to render visibly on the page:
 - The map disclaimer line remains removed.
 - Added a Google Analytics placeholder comment in `index.html`.
 - Added `GOOGLE_ANALYTICS_INSTRUCTIONS.txt`.
+
+## Mobile story continue-reading update
+
+On mobile only, the Story section now:
+- shows the opening portion of the property story first
+- applies a fade-out at the bottom of the collapsed text
+- includes a Continue Reading button
+- expands to reveal the full original story copy without reducing the words
+- keeps the desktop story fully visible
