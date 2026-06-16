@@ -370,3 +370,17 @@ On mobile only, the Story section now:
 - includes a Continue Reading button
 - expands to reveal the full original story copy without reducing the words
 - keeps the desktop story fully visible
+
+## Mobile hero and gallery order update
+
+- Mobile hero elements were moved further up toward the navigation bar.
+- Gallery tiles were reordered so the photo sequence starts with the image types shown in the provided reference screenshots, with remaining photos mixed in at the end.
+- Added `GALLERY_ORDER.txt` with the exact first-to-last gallery file order.
+
+## Curated 26-photo gallery update
+
+- Gallery reduced from 50 images to the selected 26-photo sequence.
+- The remaining 24 gallery images were removed from `/assets/images/gallery/` in this package.
+- The gallery HTML and lightbox order now follow the curated first-to-last order.
+- Added `GALLERY_ORDER_26.txt`.
+- Mobile hero elements were moved further up again.
