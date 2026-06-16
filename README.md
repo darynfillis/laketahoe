@@ -311,3 +311,13 @@ After deployment, test:
 `https://lakefronttahoevista.com/?v=8`
 
 Use a brand-new iMessage thread because Apple caches link previews aggressively.
+
+## Mobile selector, map, and gallery thumbnail update
+
+- Fixed the mobile Owner / Second Home / Investor selector so it displays as a compact three-tab segmented control.
+- Added a Google Maps embed section for 7600 N Lake Blvd, Unit 34.
+- Updated the Location nav link to jump to the map section first.
+- Gallery image paths are now root-relative.
+- Gallery thumbnail URLs include `?v=50` to avoid stale cached 404s.
+- Gallery thumbnails now fall back to the full image if the thumbnail fails.
+- `_headers` explicitly serves WebP gallery images as `image/webp`.
